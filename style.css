@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #0e101c;
+  --text-color: #ffffff;
+  --accent-color: #00ffc3;
+  --hover-color: #00bfa6;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0e101c, #1f2235);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #1f2235;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: var(--accent-color);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--hover-color);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.bar {
+  background: #333;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.level {
+  height: 100%;
+  background: var(--accent-color);
+  transition: width 1s;
+}
+
+.telegram-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.telegram-button:hover {
+  background-color: var(--hover-color);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f2235;
+  color: #aaa;
+}
+
+body.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #007acc;
+  --hover-color: #005f99;
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+}
